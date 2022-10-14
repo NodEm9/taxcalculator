@@ -14,18 +14,18 @@ const taxPayment = (amount, parcentage) => {
 const taxParcentage = (input1, input2) => {
     //Here we will take user input this means
     //the program will be integrated to frontend inside here.
-    multiplierAmount(input1, input2);
+    taxWorkings(input1, input2);
    
-    return multiplierAmount;
+    return taxWorkings;
 };
 
 const calculatedTax = document.querySelector('.result');
 
-const multiplierAmount = (amt, pa) => {
-    let amount = amt = amt / 100;
-    let parcentage = pa = pa * 100;
+const taxWorkings = (a, p) => {
+    let amount = a = a / 100;
+    let parcentage = p = p * 100;
      
-    if(amount >= 1 || pa !== null ) {
+    if(amount >= 1 || parcentage !== null ) {
         const result =  amount * parcentage; 
         console.log('Tax: ', result);
 
