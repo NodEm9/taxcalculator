@@ -4,8 +4,8 @@ const paMultiplier = document.querySelector('.input2');
 const submitBtn = document.querySelector('.submit_btn');
 
 
-const taxPayment = (amount, parcentage) => {
-   const tax = taxParcentage( amount, parcentage);
+const taxPayment = (a, p) => {
+   const tax = taxParcentage(a, p);
 
    return tax;
 };
