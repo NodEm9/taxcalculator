@@ -2,6 +2,7 @@ const form = document.querySelector('.tax');
 const amountTaxable = document.querySelector('.input1');
 const paMultiplier = document.querySelector('.input2');
 const submitBtn = document.querySelector('.submit_btn');
+const calculatedTax = document.querySelector('.result');
 
 
 const taxPayment = (a, p) => {
@@ -18,8 +19,6 @@ const taxParcentage = (input1, input2) => {
    
     return taxWorkings;
 };
-
-const calculatedTax = document.querySelector('.result');
 
 const taxWorkings = (a, p) => {
     let amount = a = a / 100;
