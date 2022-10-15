@@ -36,9 +36,7 @@ const taxWorkings = (a, p) => {
     return [ amount, parcentage ]; 
 };
 
-//Add event listener to the button and use json 
-//to stringify the taxParcentage(), failure to do this will return NAN
-
+//Add event listener to the button and call taxParcentage()
 submitBtn.addEventListener('click', (e) => {
     e.preventDefault();
     const tax = taxParcentage();
