@@ -1,25 +1,20 @@
-// const taxPayment = './tax';
+const express = require('express');
+const path = require('path');
+const port = process.env.PORT || 5000; 
 
 
-// class Tax {
-//     constructor(taxAmount){
-//         this._taxAmount = taxAmount;
-//     }
+const app = express();
 
-//     setTaxAmount(taxAmount) { return this._taxAmount = taxAmount };
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
 
-//     getTaxAmount() { return this._taxAmount }; 
+app.use(express.static(path.resolve(__dirname, 'src/')));
+app.use('/lib', express.static(path.join(__dirname, 'lib'))); 
 
-//     // getTaxCategory() {
-//     //     return this._taxParcent;
-//     // } 
+app.get('/', (req, res) => {
+    res.sendFile('index.html');
+});
 
-// };
-
-// const amt = taxParcentage.input1;
-
-// const taxpay = new Tax(`${JSON.stringify(taxPayment(amountTaxable, paMultiplier))}`);
-
-// taxpay.getTaxAmount = taxPayment;
-
-// console.log(taxpay)
+app.listen(port, () => {
+    console.log(`Server started on ${port}`);
+});

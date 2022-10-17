@@ -32,7 +32,7 @@ h1 {
    
 }
 
-.submit_btn {
+.submit-btn {
     background: rgb(9, 155, 252);
     color: rgb(5, 5, 5);
     font-size: 28px;
@@ -42,7 +42,7 @@ h1 {
     border: none;
 }
 
-.submit_btn:hover {
+.submit-btn:hover {
     transform: rotate(-40px) translate(50%, 50%);
 }
 
