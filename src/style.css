@@ -8,6 +8,7 @@ body {
     text-align: center;
     font-size: 50px;
     font-weight: bold;
+    padding: 25px;
 }
 
 h1 {
@@ -16,7 +17,7 @@ h1 {
 
 }
 
-.input1, .input2{
+.input1 {
     width: auto;
     margin: 25px;
     padding: 16px;
@@ -33,17 +34,15 @@ h1 {
 }
 
 .submit-btn {
+    width: 45%;
     background: rgb(9, 155, 252);
     color: rgb(5, 5, 5);
     font-size: 28px;
     font-weight: bold;
-    padding: 25px;
+    padding: 15px;
+    margin: auto;
     border-radius: 15px;
     border: none;
-}
-
-.submit-btn:hover {
-    transform: rotate(-40px) translate(50%, 50%);
 }
 
 p {
@@ -54,8 +53,8 @@ p {
 .tax {
     display: flex;
     flex-direction: column;
-    width: 550px;
-    height: 400px;
+    width: auto;
+    height: auto;
     margin: 0 auto;
     margin-top: 100px;
     padding: 18px;
@@ -68,8 +67,9 @@ p {
 
 .result {
     display: block;
+    flex-direction: row;
     margin-top: 16px;
     flex-wrap: wrap;
-    font-size: 14px;
+    font-size: 19px;
 }
 
