@@ -18,7 +18,7 @@ h1 {
 }
 
 .input1 {
-    width: auto;
+    width: 48vw;
     margin: 25px;
     padding: 16px;
     font-size: 16px;
@@ -27,16 +27,23 @@ h1 {
     
 }
 
+.input, .input1 {
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
 .input {
     font-size: 16px;
-    color: rgb(206, 12, 6);
+    color: rgb(6, 206, 6);
+    margin-left: 35px;
    
 }
 
 .submit-btn {
-    width: 45%;
-    background: rgb(9, 155, 252);
-    color: rgb(5, 5, 5);
+    width: 90%;
+    background: rgb(5, 154, 0);
+    color: rgb(255, 255, 255);
     font-size: 28px;
     font-weight: bold;
     padding: 15px;
@@ -66,10 +73,10 @@ p {
 }
 
 .result {
-    display: block;
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
     margin-top: 16px;
-    flex-wrap: wrap;
     font-size: 19px;
+    height: 30vh;
 }
 
